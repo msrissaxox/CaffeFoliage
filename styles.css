@@ -58,3 +58,12 @@ span {
     height: 100px;
     object-fit: cover;
  }
+
+.p-background {
+    background-color:darkgreen;
+    width: 15%;
+    border-radius: 0% 0% 40% 40%;
+    color: antiquewhite;
+    font-size: 15px;
+    padding: 30px;
+}
