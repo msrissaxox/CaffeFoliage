@@ -4,7 +4,12 @@
 3. Use accesible html
 4. 
 */
+:root{
+   --green-background: #eaff8260;
+   --green-text:  #69713e;
+   --green-background-2: #5a6913;
 
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +23,7 @@
     background-size: cover;
     background-repeat: none;
     background-position: center;
-    color: #eaff8260;
+    color: var(--green-background);
 }
 
 .nav-bar {
@@ -44,7 +49,7 @@
       }
 
 span {
-    color: #69713e;
+    color: var(--green-text);
 }
 
  .text-cultivate {
@@ -60,17 +65,24 @@ span {
  }
 
 .p-background {
-    background-color:darkgreen;
-    width: 15%;
+    background-color: var(--green-background-2);
+    width: 50%;
     border-radius: 0% 0% 40% 40%;
     color: antiquewhite;
     font-size: 15px;
     padding: 30px;
 }
 
+.flex-curated {
+    border: solid;
+    display: flex;
+}
+
+
 .curated-collections {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    border: solid red;
+
 }
