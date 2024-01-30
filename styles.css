@@ -11,19 +11,21 @@
     background-size: cover;
     background-repeat: none;
     background-position: center;
-    color: #eaff82;
+    color: #eaff8260;
 }
 
 .nav-bar {
+    border: solid black;
     display: flex;
+    align-items: flex-end;
     justify-content: flex-end;
 }
 
 .flex-container {
-    display: flex;
-    width: 40%;
+   display: flex;
     justify-content: space-around;
     font-size: 25px;
+    border: solid;
 }
 
 .header {
@@ -33,11 +35,12 @@
         font-size: 140px;
         text-align: center;
       }
+
 span {
     color: #69713e;
 }
- .text-cultivate {
 
+ .text-cultivate {
     font-size: 35px;
     font-family: "Open Sans", sans-serif;
  }     
