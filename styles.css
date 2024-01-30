@@ -67,3 +67,10 @@ span {
     font-size: 15px;
     padding: 30px;
 }
+
+.curated-collections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
