@@ -25,7 +25,8 @@ body {
     background-size: cover;
     background-repeat: none;
     background-position: center;
-    color: var(--green-background);
+    color: whitesmoke
+   
 }
 
 .nav-bar {
@@ -49,6 +50,11 @@ body {
         font-style: normal;
         font-size: 140px;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: var(--green-background);
       }
 
 span {
