@@ -52,6 +52,28 @@ span {
     color: var(--green-text);
 }
 
+/* Adds an underline style effect to the font in the cultivate paragraph */
+.style4 {
+    position: relative;
+    display: inline-block;
+  }
+  .style4:after, .style5:after {
+    content:'';
+    position: absolute;
+    border-bottom: 2px solid var(--green-background-2);
+    top: 100%;
+    transition: all 0.4s;
+   }
+  
+  /* style4 */
+  .style4:after {
+    right: 100%;
+    left: 0;
+  }
+  .style4:hover:after {
+    right: 0;
+  }
+
  .text-cultivate {
     font-size: 35px;
     font-family: "Open Sans", sans-serif;
@@ -79,8 +101,8 @@ figure:hover+span {
 
 .p-background {
     background-color: var(--green-background-2);
-    width: 40%;
-    border-radius: 0% 0% 40% 40%;
+    width: 50%;
+    border-radius: 0% 0% 50% 50%;
     color: antiquewhite;
     font-size: 15px;
     text-align: center;
