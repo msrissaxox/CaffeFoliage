@@ -83,6 +83,7 @@ figure:hover+span {
     border-radius: 0% 0% 40% 40%;
     color: antiquewhite;
     font-size: 15px;
+    text-align: center;
     padding: 30px;
 }
 
