@@ -220,3 +220,8 @@ figure:hover+span {
     width: 40vw;
 }
 
+
+.container div img {
+    object-fit: contain;
+  
+}
