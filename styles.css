@@ -28,7 +28,7 @@ body {
 .background-foliage {
     background: url('./Assets/foliage.png');
     box-shadow: inset 0 0 0 1000px rgba(76, 80, 51, 0.4);
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-size: cover;
     background-repeat: none;
@@ -57,7 +57,7 @@ body {
 
 .button-1, .button-2 {
     position: relative;
-    bottom: 100px;
+    bottom: 200px;
     left: 10%;
     margin: 15px;
     color: var(--green-background-1);
@@ -144,8 +144,18 @@ figure:hover+span {
     padding: 30px;
 }
 
+
+.cultivate {
+    height: 100vh;
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .flex-curated {
     display: flex;
+
 }
 
 
