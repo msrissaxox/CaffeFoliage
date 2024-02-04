@@ -152,9 +152,20 @@ figure:hover+span {
     justify-content: center;
 }
 
+/* review why flex is here */
+
+
+
+
 .flex-curated {
-    display: flex;
+   display: flex;
 }
+
+
+
+
+
+
 
 
 
