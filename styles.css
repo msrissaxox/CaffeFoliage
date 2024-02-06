@@ -135,37 +135,29 @@ figure:hover+span {
 	opacity: 1;
 }
 
-.p-background {
-    background-color: var(--green-background-2);
-    width: 80px
-    border-radius: 0% 0% 50% 50%;
-    color: antiquewhite;
-    font-size: 15px;
-    text-align: center;
-    padding: 30px;
+.p-text {
+  color: var(--brown-text-1);
+  font-weight: 100;
 }
 
 .background-for-collections {
-    width: 200px;
+    width: 210px;
     height: 250px;
-    border-radius: 0 0 90px 90px;
-    background-color: green;
+    border-radius: 5px 10px 90px 10px;
+    background-color: var(--green-text);
 }
 
 .cultivate {
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
 }
 
 /* review why flex is here */
 
 
-
-
 .flex-curated {
    display: flex;
+   justify-content: space-evenly;
 }
 
 
