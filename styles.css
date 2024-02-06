@@ -33,6 +33,7 @@ body {
     background-size: cover;
     background-repeat: none;
     background-position: center;
+    background-attachment: fixed;
    color: var(--green-text-2);
 }
 
@@ -202,7 +203,7 @@ figure:hover+span {
     width: 100%;
     background-size: cover;
     background-repeat: none;
-    background-position: center;
+    background-attachment: fixed;
    color: black;
 }
 
@@ -223,5 +224,4 @@ figure:hover+span {
 
 .container div img {
     object-fit: contain;
-  
 }
