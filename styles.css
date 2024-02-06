@@ -28,10 +28,11 @@ body {
 .background-foliage {
     background: url('./Assets/foliage.png');
     box-shadow: inset 0 0 0 1000px rgba(76, 80, 51, 0.4);
+    /*Set the height*/
     height: 100vh;
     width: 100%;
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
    color: var(--green-text-2);
@@ -228,4 +229,13 @@ animations and transitions, especially in older browswers
 
 .container div img {
     object-fit: contain;
+}
+
+
+/*Creates mobile responsiveness to the top section*/
+
+@media only screen and (max-device-width: 1366px) {
+    .background-foliage {
+        background-attachment: scroll;
+   }
 }
