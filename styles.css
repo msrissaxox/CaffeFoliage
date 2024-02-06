@@ -175,6 +175,11 @@ figure:hover+span {
     align-items: center;
 }
 
+
+/* transform: perspective(1px) translateZ(0); 
+Triggers hardware acceleration which leads to smoother
+animations and transitions, especially in older browswers 
+*/
 .plant-coffee-icons {
     display: inline-block;
     vertical-align: bottom;
