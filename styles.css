@@ -35,19 +35,30 @@ something from you?
     overflow-y: auto; 
     overflow-x: hidden;
     perspective: 11px;
-    border: solid 1px  green;
+    border: solid 11px  green;
     position: relative;
 }
 
+/* .content-1 {
+    border: solid red 5px;
+} 
+*/
+
+
 header {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*position relative keeps the flower section where it is*/
+    display: flex; /*This sets everything left to right*/
     height: 100%;
     transform-style: preserve-3d;
     z-index: -1;
     border: solid 5px blue;
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140px;
+    text-align: center;
+    color: var(--green-text-2);
 }
 
 /*This will make it further away by giving it a negative value.
@@ -81,23 +92,6 @@ section {
     color: white;
 }
 
-.content-1 {
-    position: absolute;
-    border: solid red 5px;
-    width: 100vw;
-}
-
-.header {
-    font-family: "Zeyada", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 140px;
-    text-align: center;
-    height: 100vh;
-    color: var(--green-text-2);
-    border: solid black;
-    
-}
 
 .button {
     background-color: black;
