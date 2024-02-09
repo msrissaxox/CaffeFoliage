@@ -27,33 +27,31 @@ body {
 
 /* Make the wrapper the exact height of the screen
 Set overflow in y direction in auto. If it overflows, it will 
-scroll for us. We are scrolling the wrapper, not body.
-Set the overflow x to hidden so there are no horiziontal scrolling
-bars.
+scroll for us. We are scrolling the wrapper, not body.bars.
 Set the perspective to 10px.  This sets the Z axis. How far away is
 something from you?
 */
 .wrapper {
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: auto; 
     overflow-x: hidden;
     perspective: 10px;
 }
-header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
+
+.title {
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+section {
+    font-size:  2rem;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
 }
 
-.background, .foreground {
-position: absolute;
-height: 100%;
-width: 100%;
-object-fit: cover;
+.foreground {
+    width: 100vw;
 }
 
 /*.background-foliage {
@@ -79,7 +77,7 @@ object-fit: cover;
 }
 */
 
-.nav-bar {
+/* .nav-bar {
     display: flex;
     justify-content: space-around;
     margin-left: 50%;
@@ -112,7 +110,7 @@ object-fit: cover;
     color: var(--brown-text-1)
 }
 
-.header {
+/* .header {
         font-family: "Zeyada", cursive;
         font-weight: 400;
         font-style: normal;
@@ -129,7 +127,7 @@ span {
 }
 
 /* Adds an underline style effect to the font in the cultivate paragraph */
-.style4 {
+/* .style4 {
     position: relative;
     display: inline-block;
   }
@@ -143,7 +141,7 @@ span {
    }
   
   /* style4 */
-  .style4:after {
+  /* .style4:after {
     right: 100%;
     left: 0;
   }
@@ -198,7 +196,7 @@ figure:hover+span {
 /* review why flex is here */
 
 
-.flex-curated {
+/* .flex-curated {
    display: flex;
    justify-content: space-evenly;
 }
@@ -222,7 +220,7 @@ figure:hover+span {
 Triggers hardware acceleration which leads to smoother
 animations and transitions, especially in older browswers 
 */
-.plant-coffee-icons {
+/* .plant-coffee-icons {
     display: inline-block;
     vertical-align: bottom;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -240,10 +238,10 @@ animations and transitions, especially in older browswers
     transform: scale(1.7);
     /*The transform code  means the element will be made 1.3 times 
     larger in both its width and height, resulting in a 30% increase in size. */
-  }
+  /*}
 
 
-.howitworks {
+/* .howitworks {
     background: url('./Assets/plant1.jpg');
     height: 100vh;
     width: 100%;
@@ -275,7 +273,7 @@ animations and transitions, especially in older browswers
 
 /*Creates mobile responsiveness to the top section*/
 
-@media only screen and (max-device-width: 1366px) {
+/*@media only screen and (max-device-width: 1366px) {
     .background-foliage {
         background-attachment: scroll;
    }
