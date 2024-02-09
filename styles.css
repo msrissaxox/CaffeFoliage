@@ -37,7 +37,28 @@ something from you?
     overflow-x: hidden;
     perspective: 10px;
 }
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background {
+    transform: translateZ(-10px) scale(2);
+}
 
+.foreground {
+    opacity: 70%;
+}
+
+.background, .foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
 .title {
     font-size: 7rem;
     color: white;
@@ -50,9 +71,6 @@ section {
     color: white;
 }
 
-.foreground {
-    width: 100vw;
-}
 
 /*.background-foliage {
     Removed this temp. as I work on tutorial
