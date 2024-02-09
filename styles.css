@@ -45,12 +45,19 @@ header {
     transform-style: preserve-3d;
     z-index: -1;
 }
+/*This will make it further away by giving it a negative value.
+By setting it to -10, the image becomes a lot smaller.
+To make it appear the same size, set the scale to 2. It sets it twice
+as large but it's still further away from us.
+*/
+
 .background {
     transform: translateZ(-10px) scale(2);
 }
 
 .foreground {
-    opacity: 70%;
+    opacity: 55%;
+    transform: translateZ(-5px) scale(1.5);
 }
 
 .background, .foreground {
@@ -60,9 +67,15 @@ header {
     z-index: -1;
 }
 .title {
-    font-size: 7rem;
-    color: white;
-    text-shadow: 0 0 5px black;
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: var(--green-background-1);
 }
 section {
     font-size:  2rem;
@@ -71,6 +84,13 @@ section {
     color: white;
 }
 
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 
 /*.background-foliage {
     Removed this temp. as I work on tutorial
