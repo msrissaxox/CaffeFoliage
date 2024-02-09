@@ -2,7 +2,6 @@
 1. Use animations
 2. Use transitions
 3. Use accesible html
-4. 
 */
 
 /* These are the variables for the colors throughout the page */
@@ -36,15 +35,17 @@ something from you?
     overflow-y: auto; 
     overflow-x: hidden;
     perspective: 10px;
+    border: solid 15px  green;
 }
 header {
     position: relative;
     display: flex;
-    justify-content: center;
     height: 100%;
-    transform-style: preserve-3d;
+   transform-style: preserve-3d;
     z-index: -1;
+    border: solid 5px blue;
 }
+
 /*This will make it further away by giving it a negative value.
 By setting it to -10, the image becomes a lot smaller.
 To make it appear the same size, set the scale to 2. It sets it twice
@@ -66,22 +67,54 @@ as large but it's still further away from us.
     width: 100%;
     z-index: -1;
 }
-.title {
-    font-family: "Zeyada", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 140px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    color: var(--green-background-1);
-}
+
+
 section {
     font-size:  2rem;
     padding: 2rem;
     background-color: #333;
     color: white;
+}
+
+.parent {
+    position: relative;
+    border: solid red 5px;
+    width: 100vw;
+}
+
+.header {
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140px;
+    text-align: center;
+    height: 100vh;
+    color: var(--green-text-2);
+    display: flex;
+    border: solid black;
+    
+}
+
+.button {
+    background-color: black;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+
+.button-1, .button-2 {
+    position: relative;
+    bottom: 200px;
+    left: 10%;
+    margin: 15px;
+    color: var(--green-text-2);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.button-2 {
+    color: var(--brown-text-1)
 }
 
 .nav-bar {
@@ -90,6 +123,7 @@ section {
     margin-left: 50%;
     font-weight: bold;
     font-size: 1.2rem;
+    color: var(--green-text-2)
 }
 
 /*.background-foliage {
